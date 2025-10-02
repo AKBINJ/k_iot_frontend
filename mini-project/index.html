@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>웹앱 기본 레이아웃 구성</title>
+  <link rel="stylesheet" href="./flex-style.css">
+</head>
+<body>
+  <div class="app">
+    <!-- 상단 헤더 -->
+    <header class="profile-header">
+      <img src="#" alt="유저 아이콘" class="user-icon">
+      <div class="projects-header">
+        <h2 class="user-name">nickname(user_name)</h2>
+      </div>
+    </header>
+
+    <!-- 본문: 좌측 사이드바 + 우측 메인 -->
+    <div class="body">
+      <main class="main">
+        <div class="tabs">
+          <div class="project">
+            <h1 class="project-name">Project</h1>
+            <button class="btn-project" id="create projects" aria-label="프로젝트 생성 버튼">Project 생성</button>
+          </div>
+        </div>
+        <section class="request-panel">
+          <div class="projectcard-grid">
+            <div class="container">
+              <ul class="project-name">
+                <li>
+                  project 1
+                  <button class="btn-project" id="update project btn" aria-label="프로젝트 수정 버튼">수정</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
