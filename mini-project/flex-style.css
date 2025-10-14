@@ -1,10 +1,4 @@
 /* 기본 리셋 */
-:root {
-  /* 레이아웃 (Layouts) */
-  --radius: 16px;
-  --container: 1120px;
-}
-
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html, body { height: 100%; }
 body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
@@ -25,39 +19,6 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
   padding: 0 16px;
   border-bottom: 2px solid red;        /* 내부 구분선 */
 }
-
-
-
-
-
-
-.user-icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-}
-
-
-
-
-
-
-
-
-
-/* BUTTON */
-/* .btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  padding: 5px 10px;
-  border-radius: 10px;
-  border: 1px solid #cfcfcf;
-  background: #cfcfcf;
-  color: white;
-  cursor: pointer;
-} */
 
 /* 본문: 좌측 사이드바 | 우측 메인 (가로 배치) */
 .body{
@@ -90,45 +51,6 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
   padding: 0 8px;
   border-bottom: 2px solid red;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-/* PROJECT */
-.project-name {
-  padding: 20px;
-  border-bottom: 1px solid #ccc;
-  background-color: #fff;
-}
-
-.btn-project {
-  float: right;
-  margin-right: 10px;
-  padding: 5px 10px;
-  border-radius: 5px;
-  background-color: #cfcfcf;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-}
-
-
-
-
-
-
-
-
-
-
 
 /* 요청/응답 영역을 세로로 분할 */
 .request-panel{
