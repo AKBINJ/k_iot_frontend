@@ -94,8 +94,8 @@ function error(message: string): never {
 //? 문제 1: 기본 타입 정의하기
 // username은 문자열, userAge는 숫자, isSubscribed는 불리언 값으로 타입을 정의
 let username: string = '박진영'
-let userAge는: number = 26;
-let isSubscribed는: boolean = false;
+let userAge: number = 26;
+let isSubscribed: boolean = false;
 
 //? 문제 2: 배열 타입 정의하기
 // 문자열 배열 fruits와 숫자 배열 numbers를 정의
