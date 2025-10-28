@@ -97,7 +97,7 @@ const loadPage = async (page: number) => {
 
   updatePageInfo();
 
-  // 다음 페이지 존재 여부는 현재 응답 개수로 판ㄴ단 
+  // 다음 페이지 존재 여부는 현재 응답 개수로 판단 
   isLastPage = users.length < limit;
   updateButtons();
 }
