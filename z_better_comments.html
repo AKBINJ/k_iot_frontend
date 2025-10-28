@@ -6,31 +6,37 @@
   <title>Document</title>
 </head>
 <body>
-  확장(플러그인) 
-  > Better Comments 설치
-  > 세부 정보의 tag정보를 복사
-
-  설정
-  > 확장
-  > Better Comments configuration
-  > Tags
-  > settings.json에서 편집
-  <!-- 
-    ! 빨간색
-    ? 파란색
-    todo 주황색
-    // 회색에 밑줄
-    
-    * 노란색
-    # 자주색
-    % 초록색
-    & 흰색
-  -->
-
+  {
+  "editor.mouseWheelZoom": true,
+  "workbench.startupEditor": "none",
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.guides.bracketPairs": "active",
+  "editor.formatOnSave": true,
+  "files.autoSave": "afterDelay",
+  "emmet.variables": {
+    "lang": "ko"
+  },
+  "liveServer.settings.CustomBrowser": "chrome",
+  "json.schemas": [],
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "better-comments.tags": [
+  
     {
       "tag": "!",
       "color": "#FF2D00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "@",
+      "color": "#c287fa",
       "strikethrough": false,
       "underline": false,
       "backgroundColor": "transparent",
@@ -92,6 +98,15 @@
       "italic": false
     },
     {
+      "tag": "^",
+      "color": "#ff00b3",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
       "tag": "&",
       "color": "#ffffff",
       "strikethrough": false,
@@ -100,6 +115,16 @@
       "bold": false,
       "italic": false
     }
-  ]
+  ],
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "vsintellicode.modify.editor.suggestSelection": "disabled",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
+
 </body>
 </html>
