@@ -110,7 +110,7 @@ export default defineConfig({
 */
 
 // src/pages/homePage/index.tsx
-// @/pages/homePage/index.tsx
+//. @/pages/homePage/index.tsx
 
 //# 4. index.html
 // : 진입점 HTML 템플릿
