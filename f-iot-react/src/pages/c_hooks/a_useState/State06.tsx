@@ -23,8 +23,8 @@ export type User = {
 };
 
 const initialValue: User = {
-  name: "이도경",
-  height: 157,
+  name: "박진영",
+  height: 200,
 };
 
 function State06() {

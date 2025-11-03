@@ -10,7 +10,7 @@ interface User {
 
 const initialUser: User = {
   id: 1,
-  name: "이승아",
+  name: "박진영",
 };
 
 function State05() {
