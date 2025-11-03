@@ -93,7 +93,7 @@ function State02() {
       <br />
       <button onClick={handleResetClick}>초기화 버튼</button>
 
-      {/* <p>Input Value: {inputValue}</p> */}
+      <p>Input Value: {inputValue}</p>
 
       <h5>여러 개의 입력 상태 관리</h5>
       <form onSubmit={handleLoginSubmin}>
