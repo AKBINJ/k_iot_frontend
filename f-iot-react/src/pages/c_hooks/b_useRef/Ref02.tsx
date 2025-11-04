@@ -6,7 +6,7 @@ import React, { useRef, useState } from 'react'
 
 //? useRef의 특징
 // : 단순히 "값 저장"만이 아니라
-// - 1) 이전 상태 기턱
+// - 1) 이전 상태 기억
 // - 2) DOM 요소 직접 제어
 
 function Ref02() {
@@ -14,7 +14,7 @@ function Ref02() {
   const [count, setCount] = useState<number>(0);
   const prevCountRef = useRef<number>(0);
 
-  //? Dom 요소 타입 - input(HTMLInputElement), div(HTMLDivElement) 등
+  //? DOM 요소 타입 - input(HTMLInputElement), div(HTMLDivElement) 등
   // >> DOM 요소는 기본요소타입과 null 타입을 유니언(OR)으로 가짐
   //    : 기본값 null 권장
   const inputRef = useRef<HTMLInputElement>(null);
@@ -22,14 +22,14 @@ function Ref02() {
   //^ === Event Handler === //
   const increment = () => {
     setCount(prevCount => {
-      prevCountRef.current - prevCount; // 이전 값
+      prevCountRef.current = prevCount; // 이전 값
       return prevCount + 1;             // 현재 값
     });
   }
 
   const handleButtonFocus = () => {
-    // current 속성값에 요소의 참조갑싱 담겨져 있음
-    if (inputRef.current) {
+    // current 속성값에 요소의 참조값이 담겨져 있음
+    if (inputRef.current) { // useRef와 연결된 DOM 요소가 있다면
       inputRef.current.focus();
     }
   }
