@@ -15,6 +15,12 @@ import Effect_Practice01 from './c_useEffect/Practice01'
 import ToggleSection from '@/components/ToggleSection'
 import A_UseCallback from './d_callback_memo/A_UseCallback'
 import B_UseMemo from './d_callback_memo/B_UseMemo'
+import Reducer01 from './e_useReducer/Reducer01'
+import Reducer02 from './e_useReducer/Reducer02'
+import Custom01 from './f_custom/Custom01'
+import Custom02 from './f_custom/Custom02'
+import Custom03 from './f_custom/Custom03'
+import TodoAppLocalStorage from '@/_practices/c_hooks/TodoAppLocalStorage'
 
 function Index() {
   return (
@@ -22,6 +28,21 @@ function Index() {
       <h1 style={{ backgroundColor: "black", color: "white" }}>
         === 리액트 Hooks ===
       </h1>
+
+      <ToggleSection title='7. 리액트 Hooks - Todo'>
+        <TodoAppLocalStorage /> <hr />
+      </ToggleSection>
+
+      <ToggleSection title='6. 리액트 Hooks - custom Hooks'>
+        <Custom01 /> <hr />
+        <Custom02 /> <hr />
+        <Custom03 /> <hr />
+      </ToggleSection>
+
+      <ToggleSection title='5. 리액트 Hooks - useReducer'>
+        <Reducer01 /> <hr />
+        <Reducer02 /> <hr />
+      </ToggleSection>
 
       <ToggleSection title='4. 리액트 Hooks -useCallback& useMemo'>
         <A_UseCallback /> <hr />
