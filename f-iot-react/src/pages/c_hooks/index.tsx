@@ -21,6 +21,7 @@ import Custom01 from './f_custom/Custom01'
 import Custom02 from './f_custom/Custom02'
 import Custom03 from './f_custom/Custom03'
 import TodoAppLocalStorage from '@/_practices/c_hooks/TodoAppLocalStorage'
+import Webcam from './webcam'
 
 function Index() {
   return (
@@ -28,6 +29,11 @@ function Index() {
       <h1 style={{ backgroundColor: "black", color: "white" }}>
         === 리액트 Hooks ===
       </h1>
+
+      <ToggleSection title='8. 리액트 Hooks - Webcam'>
+        <p>webcam</p>
+        {/* <Webcam /> <hr /> */}
+      </ToggleSection>
 
       <ToggleSection title='7. 리액트 Hooks - Todo'>
         <TodoAppLocalStorage /> <hr />
