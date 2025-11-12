@@ -26,7 +26,7 @@ interface UIState {
 export const useUIStore = create<UIState>((set) => ({
   isSidebarOpen: false,
   isModalOpen: false,
-  darkMode: true,
+  darkMode: false,
   toastMessage: null,
 
   // 함수 정의

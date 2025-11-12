@@ -21,7 +21,7 @@ function Sidebar() {
 
   return (
     <aside style={sidebarStyle}>
-      <h4>사이드바 메뉴</h4>
+      <h4>MENU</h4>
       <Navibar />
     </aside>
   );
