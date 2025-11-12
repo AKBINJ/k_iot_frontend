@@ -1,5 +1,4 @@
 import { useInput } from '@/hooks/useInput';
-import { useInputs } from '@/hooks/useInputs';
 import { useGlobalStore } from '@/stores/global.store'
 import React, { useState } from 'react'
 
@@ -12,7 +11,7 @@ function GlobalData() {
   // const  { 실제속성값: 변경할 속성값} = 반환할 값;
   const { bind: bind2 } = useInput('');
   const { value: value2, onChange: onChange2} = bind2;
-  const { categories,regions } = useGlobalStore();
+  const { categories, regions } = useGlobalStore();
 
   // const handleSelectChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
   //   setValue(e.target.value);
