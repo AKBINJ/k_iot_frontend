@@ -5,6 +5,7 @@ import { CardContainer, CardTitle } from './Card';
 import SalesChartChartJS from './charts/SalesChartChartJS';
 import SalesChartRecharts from './charts/SalesChartRecharts';
 import Clamp from '../pages/B_Clamp'
+import Tailwind from '../pages/C_Tailwind';
 
 function Dashboard({ toggleTheme }: {toggleTheme: () => void }) {
   // 예시 데이터 (mock data)
@@ -52,6 +53,10 @@ function Dashboard({ toggleTheme }: {toggleTheme: () => void }) {
 
         <CardContainer>
           <Clamp />
+        </CardContainer>
+
+        <CardContainer>
+          <Tailwind />
         </CardContainer>
       </Grid>
     </Page>
